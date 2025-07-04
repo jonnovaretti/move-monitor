@@ -5,10 +5,10 @@ import { queryClient } from '@/app/providers';
 let isRefreshing = false;
 let failedQueue: Array<{
   resolve: (token: string) => void;
-  reject: (error: any) => void;
+  reject: (error: Error) => void;
 }> = [];
 
-const processQueue = (error: any, token: string | null = null) => {
+const processQueue = (error: Error | null, token: string | null = null) => {
   failedQueue.forEach(prom => {
     if (error) {
       prom.reject(error);
@@ -57,8 +57,8 @@ apiClient.interceptors.response.use(
       await refreshToken();
       processQueue(null, 'refreshed');
       return apiClient(originalRequest);
-    } catch (error) {
-      processQueue(error, null);
+    } catch (error: unknown) {
+      processQueue(error as Error, null);
       throw error;
     } finally {
       resetRefreshState();

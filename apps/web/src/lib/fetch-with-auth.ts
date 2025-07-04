@@ -2,15 +2,8 @@
 
 import { getAccessToken } from '@/modules/auth/api/get-access-token';
 
-interface FetchWithAuthConfig extends RequestInit {
-  revalidatePaths?: string[];
-}
-
-export async function fetchWithAuth(
-  url: string,
-  config: FetchWithAuthConfig = {},
-) {
-  const { revalidatePaths, headers, ...rest } = config;
+export async function fetchWithAuth(url: string, config: RequestInit = {}) {
+  const { headers, ...rest } = config;
   const accessToken = await getAccessToken();
 
   const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}${url}`, {

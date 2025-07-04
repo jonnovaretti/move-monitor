@@ -11,6 +11,10 @@ export function useUser() {
   } = useQuery({
     ...userQueryConfig,
     placeholderData: () => queryClient.getQueryData(['user']),
+    retry: (failureCount: number, error: unknown) => {
+      console.error(error);
+      return failureCount < 3; // or any other condition, just return a boolean
+    },
   });
 
   return {

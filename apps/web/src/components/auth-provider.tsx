@@ -7,6 +7,10 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   useQuery({
     ...userQueryConfig,
     enabled: true,
+    retry: (failureCount: number, error: unknown) => {
+      console.error(error);
+      return failureCount < 3;
+    },
   });
 
   return <>{children}</>;
