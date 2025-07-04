@@ -1,5 +1,5 @@
-import { apiClient } from '@/lib/api-client';
-import { queryClient } from '@/app/providers';
+import { apiClient } from '@lib/api-client';
+import { queryClient } from '@app/providers';
 
 export async function refreshToken() {
   try {

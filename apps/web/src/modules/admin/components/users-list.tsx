@@ -7,14 +7,14 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from '@/components/ui/table';
-import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
+} from '@components/ui/table';
+import { Button } from '@components/ui/button';
+import { Card } from '@components/ui/card';
+import { Badge } from '@components/ui/badge';
 import { Pencil, Trash2, ShieldCheck, User as UserIcon } from 'lucide-react';
 import { useRouter } from 'next/navigation';
-import { toast } from '@/hooks/use-toast';
-import { deleteUser } from '@/modules/admin/actions/delete-user';
+import { toast } from '@hooks/use-toast';
+import { deleteUser } from '@modules/admin/actions/delete-user';
 import type { User } from '@apps/shared/types';
 
 interface UsersListProps {

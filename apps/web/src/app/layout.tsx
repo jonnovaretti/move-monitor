@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 import { satoshi } from './fonts';
 import './globals.css';
-import { Header } from '@/components/header';
+import { Header } from '@components/header';
 import { Providers } from './providers';
-import { Toaster } from '@/components/ui/toaster';
-import { AuthProvider } from '@/components/auth-provider';
-import { ThemeProvider } from '@/components/theme-provider';
+import { Toaster } from '@components/ui/toaster';
+import { AuthProvider } from '@components/auth-provider';
+import { ThemeProvider } from '@components/theme-provider';
 
 export const metadata: Metadata = {
   title: 'Move monitor',

@@ -7,12 +7,12 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
-import { Button } from '@/components/ui/button';
+} from '@components/ui/dropdown-menu';
+import { Button } from '@components/ui/button';
 import { Loader2, User } from 'lucide-react';
-import { useUser } from '@/modules/auth/hooks/use-user';
+import { useUser } from '@modules/auth/hooks/use-user';
 import Link from 'next/link';
-import { useLogout } from '@/modules/auth/hooks/use-auth';
+import { useLogout } from '@modules/auth/hooks/use-auth';
 
 export function UserMenu() {
   const { user, isLoading } = useUser();

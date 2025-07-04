@@ -1,6 +1,6 @@
-import { Container } from '@/components/ui/container';
-import { UsersList } from '@/modules/admin/components/users-list';
-import { getUsers } from '@/modules/admin/actions/get-users';
+import { Container } from '@components/ui/container';
+import { UsersList } from '@modules/admin/components/users-list';
+import { getUsers } from '@modules/admin/actions/get-users';
 import {
   Pagination,
   PaginationContent,
@@ -9,8 +9,8 @@ import {
   PaginationNext,
   PaginationPrevious,
   PaginationEllipsis,
-} from '@/components/ui/pagination';
-import { getVisiblePages } from '@/lib/utils';
+} from '@components/ui/pagination';
+import { getVisiblePages } from '@lib/utils';
 
 interface AdminUsersPageProps {
   searchParams: Promise<{ page?: string }>;
