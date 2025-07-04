@@ -3,7 +3,7 @@ import { useRef, useState } from 'react';
 import { Message } from './message';
 import { ProductExpertInput } from './product-expert-input';
 import { Attachment } from 'ai';
-import { useScrollToBottom } from '@/hooks/use-scroll-to-bottom';
+import { useScrollToBottom } from '@hooks/use-scroll-to-bottom';
 
 export default function ProductExpertChat() {
   const { messages, input, handleInputChange, handleSubmit, isLoading, stop } =

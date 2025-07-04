@@ -1,6 +1,6 @@
 'use client';
 
-import { Card } from '@/components/ui/card';
+import { Card } from '@components/ui/card';
 import {
   Table,
   TableBody,
@@ -8,9 +8,9 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from '@/components/ui/table';
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
+} from '@components/ui/table';
+import { Badge } from '@components/ui/badge';
+import { Button } from '@components/ui/button';
 import { CheckCircle2, XCircle } from 'lucide-react';
 import Link from 'next/link';
 import { Order } from '@apps/shared/types/order';

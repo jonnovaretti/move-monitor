@@ -2,7 +2,7 @@
 
 import { ProductFormData, productSchema } from '../validation/product';
 import { revalidatePath } from 'next/cache';
-import { fetchWithAuth } from '@/lib/fetch-with-auth';
+import { fetchWithAuth } from '@lib/fetch-with-auth';
 
 export interface ProductResponseState {
   data?: {

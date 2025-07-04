@@ -1,10 +1,10 @@
 'use client';
 
 import { SendIcon, StopCircle } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Textarea } from '@/components/ui/textarea';
+import { Button } from '@components/ui/button';
+import { Textarea } from '@components/ui/textarea';
 import { useRef, useEffect } from 'react';
-import { toast } from '@/hooks/use-toast';
+import { toast } from '@hooks/use-toast';
 
 interface ProductExpertInputProps {
   input: string;

@@ -1,6 +1,6 @@
 'use server';
 
-import { getAccessToken } from '@/modules/auth/api/get-access-token';
+import { getAccessToken } from '@modules/auth/api/get-access-token';
 
 interface FetchWithAuthConfig extends RequestInit {
   revalidatePaths?: string[];

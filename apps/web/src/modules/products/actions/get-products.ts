@@ -1,6 +1,6 @@
 'use server';
 
-import { fetchWithAuth } from '@/lib/fetch-with-auth';
+import { fetchWithAuth } from '@lib/fetch-with-auth';
 import type { PaginatedResponse, Product } from '@apps/shared/types';
 
 export async function getProducts(

@@ -1,9 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-import { Button } from '@/components/ui/button';
-import { Separator } from '@/components/ui/separator';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Button } from '@components/ui/button';
+import { Separator } from '@components/ui/separator';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@components/ui/tabs';
 import Image from 'next/image';
 import type { Product } from '@apps/shared/types';
 import { ProductReviews } from './product-reviews';
@@ -16,9 +16,9 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@/components/ui/select';
-import { useCart } from '@/modules/cart/context/cart-context';
-import { useToast } from '@/hooks/use-toast';
+} from '@components/ui/select';
+import { useCart } from '@modules/cart/context/cart-context';
+import { useToast } from '@hooks/use-toast';
 import { ReviewForm } from './review-form';
 import { useRouter } from 'next/navigation';
 

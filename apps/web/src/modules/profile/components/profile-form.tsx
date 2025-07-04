@@ -3,7 +3,7 @@
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import * as z from 'zod';
-import { Button } from '@/components/ui/button';
+import { Button } from '@components/ui/button';
 import {
   Form,
   FormControl,
@@ -11,13 +11,13 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@/components/ui/form';
-import { Input } from '@/components/ui/input';
-import { Card } from '@/components/ui/card';
-import { useToast } from '@/hooks/use-toast';
-import { useUser } from '@/modules/auth/hooks/use-user';
+} from '@components/ui/form';
+import { Input } from '@components/ui/input';
+import { Card } from '@components/ui/card';
+import { useToast } from '@hooks/use-toast';
+import { useUser } from '@modules/auth/hooks/use-user';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
-import { apiClient } from '@/lib/api-client';
+import { apiClient } from '@lib/api-client';
 
 const formSchema = z
   .object({

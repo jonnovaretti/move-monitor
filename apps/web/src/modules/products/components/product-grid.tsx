@@ -13,8 +13,8 @@ import {
   PaginationNext,
   PaginationPrevious,
   PaginationEllipsis,
-} from '@/components/ui/pagination';
-import { getVisiblePages } from '@/lib/utils';
+} from '@components/ui/pagination';
+import { getVisiblePages } from '@lib/utils';
 
 interface ProductGridProps {
   products?: Product[];

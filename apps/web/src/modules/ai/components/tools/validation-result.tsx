@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Card } from '@/components/ui/card';
+import { Card } from '@components/ui/card';
 import { CheckCircle2, XCircle, AlertCircle } from 'lucide-react';
 
 interface ValidationResultProps {

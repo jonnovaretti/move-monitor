@@ -4,7 +4,7 @@ import { ToolInvocation } from 'ai';
 import { motion } from 'framer-motion';
 import { BotIcon, UserIcon } from 'lucide-react';
 import { ReactNode } from 'react';
-import { Markdown } from '@/components/ui/markdown';
+import { Markdown } from '@components/ui/markdown';
 import { ProductInfo } from './tools/product-info';
 import { ProductImages } from './tools/product-images';
 import { BrandAssets } from './tools/brand-assets';

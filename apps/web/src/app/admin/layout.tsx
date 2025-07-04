@@ -1,8 +1,8 @@
 'use client';
 
-import { useUser } from '@/modules/auth/hooks/use-user';
+import { useUser } from '@modules/auth/hooks/use-user';
 import { redirect } from 'next/navigation';
-import { Container } from '@/components/ui/container';
+import { Container } from '@components/ui/container';
 import { Loader2 } from 'lucide-react';
 
 export default function AdminLayout({

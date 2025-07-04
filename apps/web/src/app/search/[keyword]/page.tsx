@@ -1,6 +1,6 @@
-import { Container } from '@/components/ui/container';
-import { ProductGrid } from '@/modules/products/components/product-grid';
-import { Button } from '@/components/ui/button';
+import { Container } from '@components/ui/container';
+import { ProductGrid } from '@modules/products/components/product-grid';
+import { Button } from '@components/ui/button';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 

@@ -1,4 +1,4 @@
-import { apiClient } from '@/lib/api-client';
+import { apiClient } from '@lib/api-client';
 import type { User } from '@apps/shared/types';
 
 interface LoginCredentials {

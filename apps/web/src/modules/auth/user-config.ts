@@ -1,4 +1,4 @@
-import { authApi } from '@/modules/auth/api/auth-api';
+import { authApi } from '@modules/auth/api/auth-api';
 
 export const userQueryConfig = {
   queryKey: ['user'],

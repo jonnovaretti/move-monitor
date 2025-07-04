@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import { Button } from '@/components/ui/button';
-import { Textarea } from '@/components/ui/textarea';
+import { Button } from '@components/ui/button';
+import { Textarea } from '@components/ui/textarea';
 import { StarIcon } from 'lucide-react';
-import { useToast } from '@/hooks/use-toast';
-import { apiClient } from '@/lib/api-client';
+import { useToast } from '@hooks/use-toast';
+import { apiClient } from '@lib/api-client';
 
 interface ReviewFormProps {
   productId: string;
