@@ -1,7 +1,7 @@
 import React from 'react';
-import { Container } from '@/components/ui/container';
-import { Card } from '@/components/ui/card';
-import { Skeleton } from '@/components/ui/skeleton';
+import { Container } from '@components/ui/container';
+import { Card } from '@components/ui/card';
+import { Skeleton } from '@components/ui/skeleton';
 
 export default function Loading() {
   return (

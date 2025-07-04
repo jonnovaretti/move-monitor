@@ -1,6 +1,6 @@
 'use server';
 
-import { getAccessToken } from '@/modules/auth/api/get-access-token';
+import { getAccessToken } from '@modules/auth/api/get-access-token';
 
 export async function fetchWithAuth(url: string, config: RequestInit = {}) {
   const { headers, ...rest } = config;

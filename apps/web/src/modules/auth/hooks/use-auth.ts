@@ -1,6 +1,6 @@
 'use client';
 
-import { toast } from '@/hooks/use-toast';
+import { toast } from '@hooks/use-toast';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { useRouter } from 'next/navigation';
 import { authApi } from '../api/auth-api';

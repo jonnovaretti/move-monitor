@@ -1,6 +1,6 @@
-import { refreshToken } from '@/modules/auth/api/refresh-token';
+import { refreshToken } from '@modules/auth/api/refresh-token';
 import { apiClient } from './api-client';
-import { queryClient } from '@/app/providers';
+import { queryClient } from '@app/providers';
 
 let isRefreshing = false;
 let failedQueue: Array<{

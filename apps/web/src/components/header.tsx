@@ -1,8 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import { Container } from '@/components/ui/container';
-import { SearchBox } from '@/components/search-box';
+import { Container } from '@components/ui/container';
+import { SearchBox } from '@components/search-box';
 import { UserMenu } from './navbar/user-menu';
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
